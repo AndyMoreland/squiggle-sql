@@ -1,11 +1,12 @@
 package com.truemesh.squiggle.tests;
 
-import com.truemesh.squiggle.*;
+import com.truemesh.squiggle.SelectQuery;
+import com.truemesh.squiggle.Table;
 import com.truemesh.squiggle.criteria.MatchCriteria;
+import org.junit.Test;
 
 import static com.truemesh.squiggle.criteria.MatchCriteria.GREATER;
 import static com.truemesh.squiggle.tests.support.SqlMatcher.generatesSql;
-import org.junit.Test;
 import static org.junit.Assert.assertThat;
 
 public class Example005Join {

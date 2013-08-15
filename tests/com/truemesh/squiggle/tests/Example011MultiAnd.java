@@ -4,7 +4,7 @@ import com.truemesh.squiggle.Literal;
 import com.truemesh.squiggle.SelectQuery;
 import com.truemesh.squiggle.Table;
 import com.truemesh.squiggle.WildCardColumn;
-import com.truemesh.squiggle.criteria.MultiInCriteria;
+import com.truemesh.squiggle.criteria.MultiAndCriteria;
 import com.truemesh.squiggle.literal.StringLiteral;
 import com.truemesh.squiggle.tests.support.SqlMatcher;
 import org.junit.Test;
@@ -45,7 +45,7 @@ public class Example011MultiAnd {
     values.add(firstValueTuple);
     values.add(secondValueTuple);
 
-    select.addCriteria(new MultiInCriteria(user, columns, values));
+    select.addCriteria(new MultiAndCriteria(user, columns, values));
 
     assertThat(select, SqlMatcher.generatesSql(
         "SELECT " +

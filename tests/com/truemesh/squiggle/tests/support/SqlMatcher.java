@@ -1,13 +1,12 @@
 package com.truemesh.squiggle.tests.support;
 
-import static org.hamcrest.Matchers.equalToIgnoringWhiteSpace;
-
-import org.hamcrest.Description;
-import org.hamcrest.Matcher;
-import org.hamcrest.TypeSafeMatcher;
-
 import com.truemesh.squiggle.output.Outputable;
 import com.truemesh.squiggle.output.ToStringer;
+import org.hamcrest.Description;
+import org.hamcrest.Matcher;
+import org.junit.internal.matchers.TypeSafeMatcher;
+
+import static org.hamcrest.Matchers.equalToIgnoringWhiteSpace;
 
 public class SqlMatcher extends TypeSafeMatcher<Outputable> {
     private final Matcher<String> outputMatcher;
