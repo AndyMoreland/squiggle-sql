@@ -6,7 +6,7 @@
 
     <groupId>com.airbnb.squiggle</groupId>
     <artifactId>squiggle</artifactId>
-    <version>3.0</version>
+    <version>3.0.1</version>
     <dependencies>
         <dependency>
             <groupId>org.hamcrest</groupId>
